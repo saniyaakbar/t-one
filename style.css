@@ -1,0 +1,248 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body{
+    min-height: 100vh;
+    width: 100%;
+}
+
+#one{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #D0AB8E;
+    /* border: 23px solid rgba(255, 255, 255, 0.267); */
+}
+
+#overlay{
+    position: absolute;
+    z-index: 999;
+    min-height: 100vh;
+    width: 100%;
+    border: 20px solid rgba(255, 255, 255, 0.301);
+    /* background-color: rgba(255, 255, 255, 0.301); */
+}
+
+#left{
+    overflow: hidden;
+    height: 100vh;
+    width: 50%;
+    background-color: #D0AB8E;
+    font-family: voyage;
+    font-weight: 100;
+    overflow: hidden;
+}
+
+#left-circle{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: absolute;
+    top: -20px;
+    left: -18px;
+    height: 120px;
+    width: 120px;
+    /* background-color: #fff; */
+    border-radius: 100px;
+    border: 1px solid #411e03e1;
+}
+
+#left-circle h1{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-family: volgue;
+}
+
+#circle-center{
+    position: absolute;
+    z-index: 998;
+    top: 20%;
+    left: 30%;
+    height: 500px;
+    width: 500px;
+    /* background-color: #fff; */
+    border-radius: 500px;
+    border: 1px solid #411e03;
+    opacity: 0.6;
+}
+
+#line{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: rotate(-40deg);
+    z-index: 990;
+    height: 1px;
+    width: 50%;
+    background-color: #411d01;
+    opacity: 0.6;
+}
+
+h2{
+    position: absolute;
+    top: 35%;
+    left: 3%;
+    font-size: 119px;
+    font-weight: 100;
+}
+
+h4{
+    position: absolute;
+    top: 51%;
+    left: 3%;
+    font-size: 79px;
+    font-weight: 100;
+}
+
+h1{
+    position: absolute;
+    top: 55%;
+    left: 3%;
+    font-size: 253px;
+    font-weight: 100;
+}
+
+#right{
+    /* overflow: hidden; */
+    position: relative;
+    height: 100vh;
+    width: 50%;
+    background-image: url(im-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#right-one{
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    font-size: 12px;
+    letter-spacing: 10px;
+    /* height: 10vh; */
+    width: 50%;
+    transform: rotate(90deg);
+    /* background-color: #fff; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Product Sans;
+}
+
+#right h3{
+    margin-left: 10px;
+}
+
+#right-img{
+    position: absolute;
+    z-index: 997;
+    top: 35%;
+    left: -15%;
+    height: 42vh;
+    width: 30%;
+    background-color: #fff;
+    background-image: url(im-8.jpg);
+    background-size: cover;
+}
+
+#right-menu{
+    position: absolute;
+    top: 32px;
+    left: 93%;
+    height: 50px;
+    width: 50px;
+    /* background-color: #fff; */
+    border-radius: 50px;
+    border: 1px solid #fcd6ba;
+}
+
+.l-one{
+    position: absolute;
+    height: 1px;
+    width: 60%;
+    background-color: #D0AB8E;
+    margin-top: 10px;
+}
+
+#a{
+    width: 50%;
+    top: 10%;
+    left: 30%;
+}
+
+#b{
+    top: 25%;
+    left: 20%;
+}
+
+#c{
+    width: 50%;
+    top: 40%;
+    left: 30%;
+}
+
+@media(max-width: 500px){
+    #one{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #overlay{
+        min-height: 200vh;
+        width: 100%;
+    }
+
+    #left{
+        width: 100%;
+    }
+
+    h2{
+        font-size: 81px;
+        left: 8%;
+
+    }
+
+    h4{
+        font-size: 60px;
+        left: 8%;
+    }
+
+    h1{
+        font-size: 161px;
+        left: 8%;
+    }
+
+    #right{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #right-menu{
+        top: 4%;
+        left: 78%;
+        /* background-color: black; */
+    }
+
+    .l-one{
+        background-color: rgb(243, 220, 190);
+    }
+
+    #line{
+        top: 71%;
+        left: 9%;
+        height: 3px;
+        width: 78%;
+        transform: rotate(0deg);
+    }
+
+    #circle-center{
+        display: none;
+       
+        }
+}
