@@ -223,6 +223,24 @@ h1{
         overflow: hidden;
     }
 
+    #right-img {
+        position: absolute;
+        z-index: 997;
+        top: 35%;
+        left: 26%;
+        height: 42vh;
+        width: 53%;
+        background-color: #fff;
+        background-image: url(im-8.jpg);
+        background-size: cover;
+    }
+
+    #right-one {
+        position: absolute;
+        top: 54%;
+        left: 72%;
+    }
+
     #right-menu{
         top: 4%;
         left: 78%;
